@@ -3,6 +3,10 @@ import MenuBar from './components/MenuBar';
 import Slider from './components/Slider';
 import About from './components/About';
 import PromoSection from './components/PromoSection';
+import Action from './components/Action';
+import Skills from './components/Skills';
+import Services from './components/Services';
+import Work from './components/Work';
 
 class App extends Component {
  render(){
@@ -12,7 +16,10 @@ class App extends Component {
             <Slider />
             <PromoSection />
             <About />
-
+            <Action />
+            <Skills />
+            <Services />
+            <Work />
          </div>
 
      )

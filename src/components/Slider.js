@@ -6,7 +6,7 @@ class Slider extends Component{
         super(props);
     }
     onSelect= (active,direction)=>{
-        console.log(`active=${active} && direction=${direction}`);
+        // console.log(`active=${active} && direction=${direction}`);
     }
     render() {
       return(

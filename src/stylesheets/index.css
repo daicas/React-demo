@@ -281,6 +281,10 @@ fieldset {
     background-color: transparent; }
     .mainmenu .navbar-default .navbar-nav .active a {
       background-color: transparent; }
+    .mainmenu .navbar-default .navbar-toggle {
+      border-color: transparent; }
+    .mainmenu .navbar-default .navbar-toggle:hover, .mainmenu .navbar-default .navbar-toggle:focus {
+      background-color: transparent; }
 
 /* ----------------------------------------------------------------------------------------
 *                               03. Slider area css
@@ -428,6 +432,72 @@ fieldset {
 
 #promo-section .promo-box h3 {
   /*text-transform: uppercase;*/ }
+
+#action.action-area {
+  background-color: #888;
+  background-image: url(http://demo.coderspoint.net/web-bean/bizniz2/assets/img/bg/testimonial-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+  color: #fff; }
+
+#action.action-area:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.65); }
+
+#action.action-area h2 {
+  color: #fff;
+  margin: 0; }
+
+#action.action-area .btn {
+  font-weight: 500;
+  font-size: 18px; }
+
+#action.action-area .btn:hover {
+  color: #000;
+  background-color: #fff; }
+
+#skills .nav-tabs li a {
+  color: #fff;
+  background-color: #3f8ed9;
+  border-radius: 0px; }
+
+#skills .nav-tabs li a:hover {
+  color: inherit; }
+
+#skills .tab-content {
+  margin-top: 10px; }
+
+#skills .skill-area h3 {
+  margin-top: 0px;
+  margin-bottom: 25px; }
+
+@media (max-width: 768px) {
+  #skills .skill-area h3 {
+    margin-top: 20px; } }
+
+#skills .skill-bar-container h1 {
+  font-weight: 500;
+  margin-bottom: 20px; }
+
+#skills .skill-progress-bar {
+  position: relative;
+  height: 15px;
+  margin: 0 0 25px 0;
+  background: #f5f5f5;
+  width: 100%; }
+
+#skills .skill-progress-bar > span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: #3f8ed9; }
 
 /* ----------------------------------------------------------------------------------------
 * Author        : Coderspoint

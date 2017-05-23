@@ -1,0 +1,32 @@
+#action {
+  &.action-area {
+      background-color: #888;
+      background-image: url(http://demo.coderspoint.net/web-bean/bizniz2/assets/img/bg/testimonial-bg.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center center;
+      position: relative;
+      color: #fff;
+  }
+  &.action-area:before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.65);
+  }
+  &.action-area h2 {
+      color: #fff;
+      margin: 0;
+  }
+  &.action-area .btn {
+      font-weight: 500;
+      font-size: 18px;
+  }
+  &.action-area .btn:hover {
+      color: #000;
+      background-color: #fff;
+  }
+}

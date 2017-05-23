@@ -65,6 +65,12 @@
                 }
             }
         }
+        .navbar-toggle{
+            border-color: transparent;
+        }
+        .navbar-toggle:hover, .navbar-toggle:focus{
+            background-color: transparent;
+        }
     }
 }
 

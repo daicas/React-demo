@@ -1,0 +1,34 @@
+#work{
+  /* --------------------------------------------------------------------------------
+*                               06. latest-project area css
+* ------------------------------------------------------------------------------- */
+#work .latest-project-area {
+    padding-bottom: 0px;
+}
+
+.project-item {
+    text-align: center;
+}
+
+.figcaption {
+    display: flex;
+    align-items: center;
+}
+
+.project-item .overlay {
+    padding: 20px;
+}
+
+.project-item h3 {
+    margin-top: 0px;
+    color: inherit;
+}
+
+.project-item a i.fa {
+    color: #fff;
+    font-size: 25px;
+    display: inline-block;
+    margin: 10px;
+}
+
+}
