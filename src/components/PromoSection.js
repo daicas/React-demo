@@ -5,7 +5,7 @@ class PromoSection extends Component{
         return(
           <div id="promo-section" className="promo-section section-big">
             <div className="container">
-                <div class="row">
+                <div className="row">
                     <div className="col-md-4">
                     <div className="promo-box">
                             <i className="fa fa-star"></i>

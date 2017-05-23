@@ -3,6 +3,16 @@
     box-shadow: 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
+    .mainmenu{
+      margin-top: 0px;
+        .navbar-nav {
+            li{
+                a{
+                    color: #333;
+                }
+            }
+        }
+    }
 }
 .mainmenu {
     margin-top: 10px;
@@ -58,9 +68,4 @@
     }
 }
 
-.sticky-menu {
-    margin-top: 0px;
-    .navbar-nav li a {
-        color: #333;
-    }
-}
+
