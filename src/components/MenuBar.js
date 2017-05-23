@@ -12,9 +12,7 @@ class MenuBar extends Component{
   render(){
     return(
         <Router>
-
-
-              <div className="menu-area navbar-fixed-top" style={style}>
+         <div className="menu-area navbar-fixed-top">
           <div className="container">
             <div className="row">
               <div class="col-md-12">
