@@ -6,16 +6,13 @@ import Services from '../views/Services';
 import Location from '../views/Location';
 import SignIn from '../views/SignIn';
 import SignUp from '../views/SignUp';
-import { Sticky } from 'react-sticky';
+
 
 class MenuBar extends Component{
   render(){
     return(
         <Router>
-        <Sticky topOffset={0}>
-        {
-          ({style,isSticky,distanceFromTop=0}) => {
-              return (
+
 
               <div className="menu-area navbar-fixed-top" style={style}>
           <div className="container">
@@ -55,11 +52,7 @@ class MenuBar extends Component{
             </div>
           </div>
         </div>
-              )
-            }
-        }
-        </Sticky>
- </Router>
+    </Router>
     )
   }
 }
