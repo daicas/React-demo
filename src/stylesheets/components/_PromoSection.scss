@@ -1,0 +1,29 @@
+#promo-section{
+  &.promo-section {
+    /*padding-bottom: 0px;*/
+}
+
+.promo-box {
+    padding-right: 25px;
+}
+
+@media (max-width: 991px) {
+    .promo-box {
+        padding-right: 0px;
+        margin-bottom: 30px;
+    }
+    .promo-box.three {
+        margin-bottom: 0px;
+    }
+}
+
+.promo-box i.fa {
+    font-size: 40px;
+    color: #3f8ed9;
+}
+
+.promo-box h3 {
+    /*text-transform: uppercase;*/
+}
+
+}

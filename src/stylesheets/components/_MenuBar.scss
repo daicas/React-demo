@@ -1,0 +1,66 @@
+.sticky-menu {
+    background: #fff;
+    box-shadow: 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+.mainmenu {
+    margin-top: 10px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    .navbar {
+        margin-bottom: 0;
+        border: 0px;
+    }
+    .navbar-brand {
+        display: block;
+        color: #3f8ed9;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 36px;
+        padding: 15px 0;
+    }
+    .navbar-brand:hover {
+        color: #3f8ed9;
+    }
+    .navbar-nav li {
+        float: none;
+        display: inline-block;
+    }
+    .navbar-nav li a {
+        color: #fff;
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    .nav>li>a:hover,
+    .nav>li>a:active,
+    .nav>li>a:focus {
+        background: none;
+    }
+    .navbar-nav li.active a {
+        color: #3f8ed9;
+    }
+    /* Mobile Nav css */
+    .navbar-toggle .icon-bar {
+        background: #3f8ed9;
+    }
+    .navbar-default{
+        background-color: transparent;
+        .navbar-nav{
+            .active{
+                a{
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+.sticky-menu {
+    margin-top: 0px;
+    .navbar-nav li a {
+        color: #333;
+    }
+}
