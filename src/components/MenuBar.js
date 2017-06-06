@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import { Navbar} from 'react-bootstrap';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import Home from '../views/Home';
@@ -19,10 +20,15 @@ class MenuBar extends Component{
 }
 componentDidMount(){
     window.addEventListener('scroll', this.handleScroll);
+
 }
 componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
 }
+
+shouldComponentUpdate(nextProps, nextState){
+    return (this.state.classNameSticky !== nextState.classNameSticky);
+  }
 
 handleScroll() {
   if (window.scrollY > 100) {
@@ -32,9 +38,15 @@ handleScroll() {
   }
 }
 handleClick(e) {
-    // e.preventDefault();
-
+  e.preventDefault();
+ let id = e.target.getAttribute('href');
+  if($(id).length >0)
+  {
+     $(e.target).addClass('active');
+     $('html, body').animate({scrollTop: $(id).offset().top
+  }, 500);
   }
+}
 
   render(){
     return(
@@ -55,8 +67,8 @@ handleClick(e) {
                   <Navbar.Collapse>
                   <ul className="nav navbar-nav navbar-right">
                     <li className="active"><Link to="/">Home</Link></li>
-                    <li><a onClick={this.handleClick} href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a onClick={(e) => this.handleClick(e)} href="#about">About</a></li>
+                    <li><a onClick={(e) => this.handleClick(e)} href="#service">Services</a></li>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#price">Price</a></li>
@@ -67,11 +79,11 @@ handleClick(e) {
                   </Navbar.Collapse>
               </Navbar>
 
-            <Route exact path='/' component={Home}/>
-            <Route  path='/services' component={Services}/>
-            <Route  path='/location' component={Location}/>
-            <Route  path='/signin' component={SignIn}/>
-            <Route  path='/signup' component={SignUp}/>
+              <Route exact path='/' component={Home}/>
+              <Route  path='/services' component={Services}/>
+              <Route  path='/location' component={Location}/>
+              <Route  path='/signin' component={SignIn}/>
+              <Route  path='/signup' component={SignUp}/>
                 </div>
               </div>
             </div>

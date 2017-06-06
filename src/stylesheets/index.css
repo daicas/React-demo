@@ -499,6 +499,55 @@ fieldset {
   height: 100%;
   background-color: #3f8ed9; }
 
+#services.service-area {
+  background-color: #f5f5f5; }
+
+#services .service-box {
+  text-align: center;
+  padding: 30px 40px;
+  margin: 5px 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+
+#services .service-box p {
+  text-align: left; }
+
+#services .service-box .read_service {
+  text-decoration: none; }
+
+#services .service-box i.fa {
+  color: #3F8ED9;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-size: 40px; }
+
+#services .service-box h3 {
+  margin-top: 0;
+  position: relative;
+  margin-bottom: 15px; }
+
+#work {
+  /* --------------------------------------------------------------------------------
+*                               06. latest-project area css
+* ------------------------------------------------------------------------------- */ }
+  #work #work .latest-project-area {
+    padding-bottom: 0px; }
+  #work .project-item {
+    text-align: center; }
+  #work .figcaption {
+    display: flex;
+    align-items: center; }
+  #work .project-item .overlay {
+    padding: 20px; }
+  #work .project-item h3 {
+    margin-top: 0px;
+    color: inherit; }
+  #work .project-item a i.fa {
+    color: #fff;
+    font-size: 25px;
+    display: inline-block;
+    margin: 10px; }
+
 /* ----------------------------------------------------------------------------------------
 * Author        : Coderspoint
 * Template Name : Lansing | One Page Corporate Html Template

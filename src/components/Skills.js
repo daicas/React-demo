@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
 
 class Skills extends Component{
+    constructor() {
+        super();
+
+        this.handleClick = this.handleClick.bind(this)
+    }
+    handleClick(e){
+        e.preventDefault();
+        console.log(document.getElementById('skills'));
+        let skillsblock = document.getElementById('skills')[0];
+        let id = e.target.getAttribute('href');
+        console.log(skillsblock.getElementById('tab1'));
+        //skillsblock.getElementById('tab1').className +=' active in';
+    }
     render(){
         return(
           <div id="skills" className="skill-area section-big">
@@ -14,13 +27,13 @@ class Skills extends Component{
 
                     <ul className="nav nav-tabs">
                         <li className="">
-                            <a data-toggle="tab" href="#tab1" aria-expanded="false">Planning</a>
+                            <a data-toggle="tab" onClick={this.handleClick} href="#tab1" aria-expanded="false">Planning</a>
                         </li>
                         <li className="">
-                            <a data-toggle="tab" href="#tab2" aria-expanded="false">Research</a>
+                            <a data-toggle="tab" onClick={(e) => this.handleClick} href="#tab2" aria-expanded="false">Research</a>
                         </li>
                         <li className="active">
-                            <a data-toggle="tab" href="#tab3" aria-expanded="true">Target</a>
+                            <a data-toggle="tab" onClick={(e) => this.handleClick} href="#tab3" aria-expanded="true">Target</a>
                         </li>
                     </ul>
 
